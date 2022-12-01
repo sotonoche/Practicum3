@@ -20,7 +20,7 @@ namespace Practicum3_Task2_WF
         static double f(double x)
         {
             double y;
-            if (Math.Abs(x) <= 0.1) y = Math.Pow(x, 3) - 1;
+            if (Math.Abs(x) <= 0.1) y = Math.Pow(x, 3) - 0.1;
             else if (Math.Abs(x) > 0.1 && Math.Abs(x) <= 0.2) y = 0.2 * x - 0.1;
             else y = Math.Pow(x, 3) + 0.1;
             return y;
