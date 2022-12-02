@@ -21,9 +21,9 @@ namespace Practicum3
             {
                 try
                 {
-                    Console.Write("Введите значение точки a: ");
+                    Console.Write("Введите значение точки a (В радианах): ");
                     a = double.Parse(Console.ReadLine());
-                    Console.Write("Введите значение точки b: ");
+                    Console.Write("Введите значение точки b (В радианах): ");
                     b = double.Parse(Console.ReadLine());
                     break;
                 }
@@ -33,8 +33,8 @@ namespace Practicum3
                 }
             }
 
-            if (f(a) < f(b)) Console.WriteLine($"В точке a, равной {Math.Round(f(a), 2)}, функция принимает наименьшее значение.");
-            else Console.WriteLine($"В точке b, равной {Math.Round(f(b), 2)}, функция принимает наименьшее значение.");
+            if (f(a) < f(b)) Console.WriteLine($"В точке a, равной {Math.Round(f(a), 2)}, функция принимает наименьшее значение. f(b) = {Math.Round(f(b), 2)}");
+            else Console.WriteLine($"В точке b, равной {Math.Round(f(b), 2)}, функция принимает наименьшее значение. f(a) = {Math.Round(f(a), 2)}");
         }
     }
 }
