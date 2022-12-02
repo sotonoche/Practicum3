@@ -29,11 +29,12 @@ namespace Practicum3_Task3_WF
             double a = (double)numericUpDownA.Value;
             double b = (double)numericUpDownB.Value;
             double h = (double)numericUpDownH.Value;
+            double y;
 
             richTextBoxRes.Clear();
             for (double i = a; i <= b; i += h)
             {
-                f(i, out double y);
+                f(i, out y);
                 richTextBoxRes.Text += $"f({i}) = {y}";
                 richTextBoxRes.Text += "\n";
             }

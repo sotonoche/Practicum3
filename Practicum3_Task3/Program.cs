@@ -18,7 +18,7 @@ namespace Practicum3_Task3
 
         static void Main(string[] args)
         {
-            double a, b, h;
+            double a, b, h, y;
 
             while (true)
             {
@@ -40,7 +40,7 @@ namespace Practicum3_Task3
 
             for (double i = a; i <= b; i += h)
             {
-                f(i, out double y);
+                f(i, out y);
                 Console.WriteLine($"f({i}) = {y}");
             }
         }
